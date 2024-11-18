@@ -6,7 +6,13 @@ Compromising an organization's cloud infrastructure is like sitting on a gold mi
 
 AzureGoat is a vulnerable by design infrastructure on Azure featuring the latest released OWASP Top 10 web application security risks (2021) and other misconfiguration based on services such as App Functions, CosmosDB, Storage Accounts, Automation and Identities. AzureGoat mimics real-world infrastructure but with added vulnerabilities. It features multiple escalation paths and is focused on a black-box approach.
 
-The project will be divided into modules and each module will be a separate web application, powered by varied tech stacks and development practices. It will leverage IaC through terraform to ease the deployment process.
+AzureGoat uses IaC (Terraform) to deploy the vulnerable cloud infrastructure on the user's Azure account. This gives the user complete control over code, infrastructure, and environment. Using AzureGoat, the user can learn/practice:
+- Cloud Pentesting/Red-teaming
+- Auditing IaC
+- Secure Coding
+- Detection and mitigation
+
+The project is divided into modules and each module is a separate web application, powered by varied tech stacks and development practices. 
 
 **Presented at**
 
@@ -96,9 +102,11 @@ Shantanu Kale, Cloud Developer, INE <skale@ine.com>
 
 Sanjeev Mahunta, Software Engineer (Cloud), INE <smahunta@ine.com>
 
+D Yashwanth Babu, Software Engineer (Cloud), INE <dbabu@ine.com>
+
 # Solutions
 
-The manuals are available in the [solutions](solutions/) directory 
+The offensive manuals are available in the [attack-manuals](attack-manuals/) directory, and the defensive manuals are available in the [defence-manuals](defence-manuals/) directory. 
 
 Module 1 Exploitation Videos: https://www.youtube.com/playlist?list=PLcIpBb4raSZGdYHKpqIu5Boc2ziga4oGY 
 
@@ -145,7 +153,7 @@ You should have received a copy of the GNU General Public License along with thi
 # Sister Projects
 
 - [AWSGoat](https://github.com/ine-labs/AWSGoat)
-- GCPSheep (Coming Soon)
+- [GCPGoat](https://github.com/ine-labs/GCPGoat)
 - [PA Toolkit (Pentester Academy Wireshark Toolkit)](https://github.com/pentesteracademy/patoolkit)
 - [ReconPal: Leveraging NLP for Infosec](https://github.com/pentesteracademy/reconpal) 
 - [VoIPShark: Open Source VoIP Analysis Platform](https://github.com/pentesteracademy/voipshark)
